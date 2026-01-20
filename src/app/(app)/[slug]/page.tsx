@@ -1,5 +1,6 @@
 import React from 'react'
-
+export const dynamic = 'force-dynamic'
+export const dynamicParams = true
 export default function Page() {
   return (
     <div style={{ padding: '50px', textAlign: 'center' }}>
