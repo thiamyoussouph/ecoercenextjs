@@ -38,9 +38,10 @@ export default buildConfig({
     user: Users.slug,
   },
   collections: [Users, Pages, Categories, Media],
-  db: postgresAdapter({
+ db: postgresAdapter({
     pool: {
-      connectionString: process.env.DATABASE_URL || '',
+      // Remplace DATABASE_URL par POSTGRES_URL
+      connectionString: process.env.POSTGRES_URL || '', 
     },
     push: true,
   }),
